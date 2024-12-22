@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced AI Platform</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+         .header {
+            background-color: #2a2a2a;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+             z-index: 100;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+         .upload-button {
+            background: linear-gradient(45deg, #f00, #0f0, #00f, #f00);
+            background-size: 400% 400%;
+             color: white;
+             padding: 10px 15px;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+              animation: rgb-gradient 10s linear infinite;
+         }
+    
+         .container {
+            flex: 1;
+             overflow-y: auto; /* For vertical scrolling */
+            padding: 20px;
+            display: flex;
+             flex-direction: column;
+             box-sizing: border-box;
+            
+        }
+        .section {
+           background-color: #2a2a2a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+         }
+         .section h2 {
+             color: #fff;
+             margin-bottom: 10px;
+             text-align: center;
+             border-bottom: 1px solid #3a3a3a;
+             padding-bottom: 10px;
+         }
+
+         .input-area {
+            margin-bottom: 15px;
+        }
+        
+        .input-area label {
+            display: block;
+           color: #a0a0a0;
+             margin-bottom: 5px;
+            font-size: 1.1em;
+         }
+        
+        .input-area textarea,
+        .input-area input{
+            width: 100%;
+             padding: 10px;
+            border-radius: 5px;
+             background-color: #333;
+             color: #ddd;
+           border: 1px solid #444;
+            resize: vertical;
+        }
+        
+        .input-area textarea{
+            min-height: 100px;
+        }
+         .rgb-button {
+             background: linear-gradient(45deg, #f00, #0f0, #00f, #f00);
+             background-size: 400% 400%;
+             color: white;
+             padding: 10px 15px;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+             margin-top: 10px;
+             animation: rgb-gradient 10s linear infinite;
+         }
+        
+        @keyframes rgb-gradient {
+           0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+           100% { background-position: 0% 50%; }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Advanced AI Platform</h1>
+       <button class="upload-button">Upload File</button>
+    </div>
+    <div class="container">
+        <div class="section">
+             <h2>Chat and AI</h2>
+            <div class="input-area">
+                <label for="chat-prompt">Ask your question:</label>
+               <textarea id="chat-prompt" placeholder="Type your question here..."></textarea>
+                <button class="rgb-button">Send</button>
+            </div>
+        </div>
+    
+        <div class="section">
+            <h2>Video Editing AI</h2>
+             <div class="input-area">
+                 <label for="video-prompt">Video Editing Instructions:</label>
+                <textarea id="video-prompt" placeholder="Give video editing instruction"></textarea>
+                <button class="rgb-button">Process Video</button>
+             </div>
+         </div>
+         <div class="section">
+             <h2>Image Generation</h2>
+            <div class="input-area">
+                <label for="image-prompt">Image Creation Instructions:</label>
+               <input type="text" id="image-prompt" placeholder="Describe the image you want to create">
+               <button class="rgb-button">Generate Image</button>
+           </div>
+        </div>
+         <div class="section">
+            <h2>3D Model Creation</h2>
+            <div class="input-area">
+                <label for="3d-prompt">3D Model Instructions</label>
+               <input type="text" id="3d-prompt" placeholder="Describe the 3D Model">
+                 <button class="rgb-button">Generate 3D Model</button>
+            </div>
+        </div>
+        <div class="section">
+             <h2>Code Generation</h2>
+             <div class="input-area">
+                <label for="code-prompt">Code Instructions</label>
+               <textarea type="text" id="code-prompt" placeholder="What kind of code you need?"></textarea>
+               <button class="rgb-button">Generate Code</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Other AI Tools</h2>
+             <ul>
+                <li>Excel Helper</li>
+                 <li>Presentation AI</li>
+                <li>Website AI</li>
+                <li>App AI</li>
+                <li>Game Making AI</li>
+                 <li>Music Making AI</li>
+                 <li>Robotics AI</li>
+           </ul>
+        </div>
+    </div>
+</body>
+</html>
